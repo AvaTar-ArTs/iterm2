@@ -1,0 +1,109 @@
+# macOS / editor noise
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Python / local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Node / build output
+node_modules/
+dist/
+build/
+.cache/
+
+# Local AI tool state, credentials, chat history, and host-specific caches.
+# These can contain tokens, OAuth/account files, private logs, or large generated data.
+.claude/
+.codex-history/
+.cursor/
+.gemini/
+.poolside/
+.qodo/
+.qwen/
+Codex/
+claude-ecosystem/
+cursor-ecosystem/
+gemini/
+
+# iTerm session history is large and may contain private terminal contents.
+Session-History/
+Session-History-Archive/
+*.itermarchive
+
+# Scratch/cache/download leftovers
+.tmp/
+tmp/
+*.tmp
+.tmp.zip
+
+# Local backups
+*.bak
+*.backup
+*.bak_copy
+*_backup/
+backups/
+
+# Generated inventory / audit exports
+ecosystem_enabled_disabled.md
+ecosystem_inventory.json
+enriched-*.csv
+docs-*.csv
+docs-iterm2.csv
+ex.json
+conversation-export*.json
+qwen_hookify_compare_report.json
+Codex_Complete_File_List_With_Sizes.txt
+Codex_Complete_File_Listing.txt
+Codex_File_Types_Breakdown.txt
+Codex_Full_Hierarchical_Tree.txt
+iterm2-set.txt
+iterm2_sort_plan_summary.txt
+todos_combined.txt
+audio.txt
+nul
+
+# Merged from ~/.gitignore — minimal secrets (2026-04-11)
+.env
+.env.*
+*.env
+.env.local
+.env.development
+.env.production
+.env.staging
+.env.test
+.env.d/
+*api*key*
+.secret*
+.token*
+*credential*
+*password*
+.auth*
+OPENAI_API_KEY*
+ANTHROPIC_API_KEY*
+GROQ_API_KEY*
+GROK_API_KEY*
+DEEPSEEK_API_KEY*
+GOOGLE_API_KEY*
+GOOGLE_CLIENT_SECRET*
+.aider*
+agents/notebooklm/
+
+# Scratch / session dumps — not durable artifacts (2026-06-16)
+/2026-*-this-session-is-being-continued-from-a-previous-c.txt
+/2026-*-claude-ecosystem-token-cleanup-session.txt
+/new.txt
+/output.txt
+/better-way.txt
+/docs.txt
+/sell.txt
+/learned-contenxt.md
+/ai-merge-codex-lack.txt
+/docs/agent_ops/handoffs/handoff_2026-04-11_13-51-23.md
